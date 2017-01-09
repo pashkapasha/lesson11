@@ -1,0 +1,40 @@
+.menu1
+  float: right
+  margin-top: 15px
+  nav
+    ul
+      li
+        text-align: center
+        flex-wrap: wrap
+        a
+          color: #ffffff
+          text-transform: uppercase
+          font-size: 12px
+
+.menu
+  ul
+    margin: 0
+    list-style: none
+    display: none
+  .title
+    font-size: 21px
+    cursor: pointer
+    color: white
+    font-weight: 700
+    &::before
+      content: '▶ '
+      font-size: 80%
+      color: #eeaf4e
+  &.open
+    text-align: center
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    background-color: rgba(220, 220, 220, 0.5)
+    width: 290px
+    height: auto
+    margin-top: 30px
+    .title::before
+      content: '▼ '
+      color: #eeaf4e
+      text-align: center
+    ul
+      display: block
