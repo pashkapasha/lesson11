@@ -1,22 +1,29 @@
 @media (min-width: 320px)
-  header
+  .main-header
     height: 350px
     &::before
       height: 350px
     h1
       margin-top: 8px
-  .pos-number
-    position: absolute
-    left: -120px
-    margin-top: 5px
-    .fa
-      color: #edae4e
-      float: left
-      padding-right: 5px
-    .number
-      color: #fff
-      float: left
-      font-size: 13px
+  .contact-bg
+    height: 180px
+    &::before
+      height: 180px
+  header
+    h1
+      margin-top: 10px
+    .pos-number
+      position: absolute
+      left: -120px
+      margin-top: 5px
+      .fa
+        color: #edae4e
+        float: left
+        padding-right: 5px
+      .number
+        color: #fff
+        float: left
+        font-size: 13px
   .hero
     text-align: center
     p
@@ -85,17 +92,42 @@
           display: block
           width: 150px
           padding-top: 15px
+  .call-us
+    margin-top: 50px
+    .img-overlay
+      background: black
+      &::before
+        background: black
+        width: 100%
+    span
+      float: right
+      .button
+        width: 290px
+        margin-bottom: 20px
+    p
+      margin-top: 13px
+      text-align: center
+      font-weight: 700
+      .fa
+        color: #edae4e
 
 
 @media (min-width: 768px)
-  header
+  .main-header
     height: 480px
     &::before
       height: 480px
+  .contact-bg
+    height: 225px
+    &::before
+      height: 225px
+  header
+    h1
+      margin-top: 8px
     .pos-number
       position: relative
       left: 0
-      margin-top: 20px
+      margin-top: 23px
       text-align: center
       .number
         font-size: 9px
@@ -161,9 +193,6 @@
           width: 150px
           float: left
           padding: 10px 0 0 40px
-
-
-
     .cont2
       background: url(../img/quote-icon-2.png) no-repeat 8px 16px
       padding-top: 50px
@@ -191,17 +220,42 @@
           width: 150px
           float: left
           padding: 10px 0 0 40px
+  .call-us
+    margin-top: 50px
+    .number-mail
+      text-align: center
+    .img-overlay
+      background: black
+      &::before
+        background: black
+        width: 100%
+    span
+      .button
+        float: left
+        width: 290px
+        margin: 30px 20px 20px 0
+    p
+      margin-top: 50px
+      margin-left: 20px
+      float: left
 
 
 
 
 @media (min-width: 992px)
-  header
+  .main-header
     height: 720px
     &::before
       height: 720px
     h1
       margin-top: 25px
+  .contact-bg
+    height: 325px
+    &::before
+      height: 325px
+    h1
+      margin-top: 25px
+  header
     .pos-number
       margin-top: 40px
       text-align: center
@@ -249,9 +303,13 @@
     margin-top: 70px
   .clients
     margin-top: 70px
+  .call-us
+    margin-top: 100px
+    .block-hero
+      margin-left: 20px
 
 @media (min-width: 1200px)
-  header
+  .main-header
     .pos-number
       margin-top: 38px
       text-align: center

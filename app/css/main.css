@@ -19,21 +19,27 @@ address {
   font-style: normal; }
 
 @media (min-width: 320px) {
-  header {
+  .main-header {
     height: 350px; }
-    header::before {
+    .main-header::before {
       height: 350px; }
-    header h1 {
+    .main-header h1 {
       margin-top: 8px; }
-  .pos-number {
+  .contact-bg {
+    height: 180px; }
+    .contact-bg::before {
+      height: 180px; }
+  header h1 {
+    margin-top: 10px; }
+  header .pos-number {
     position: absolute;
     left: -120px;
     margin-top: 5px; }
-    .pos-number .fa {
+    header .pos-number .fa {
       color: #edae4e;
       float: left;
       padding-right: 5px; }
-    .pos-number .number {
+    header .pos-number .number {
       color: #fff;
       float: left;
       font-size: 13px; }
@@ -103,52 +109,76 @@ address {
         .clients .cont3 .author ul {
           display: block;
           width: 150px;
-          padding-top: 15px; } }
+          padding-top: 15px; }
+  .call-us {
+    margin-top: 50px; }
+    .call-us .img-overlay {
+      background: black; }
+      .call-us .img-overlay::before {
+        background: black;
+        width: 100%; }
+    .call-us span {
+      float: right; }
+      .call-us span .button {
+        width: 290px;
+        margin-bottom: 20px; }
+    .call-us p {
+      margin-top: 13px;
+      text-align: center;
+      font-weight: 700; }
+      .call-us p .fa {
+        color: #edae4e; } }
 
 @media (min-width: 768px) {
-  header {
+  .main-header {
     height: 480px; }
-    header::before {
+    .main-header::before {
       height: 480px; }
-    header .pos-number {
-      position: relative;
-      left: 0;
-      margin-top: 20px;
-      text-align: center; }
-      header .pos-number .number {
-        font-size: 9px;
-        color: #fff;
-        display: block; }
-      header .pos-number .fa {
-        color: #edae4e; }
-    header .menu1 {
-      margin-top: 15px; }
-    header .menu ul {
-      list-style: none;
-      display: block;
-      line-height: 2.2; }
-      header .menu ul li {
+  .contact-bg {
+    height: 225px; }
+    .contact-bg::before {
+      height: 225px; }
+  header h1 {
+    margin-top: 8px; }
+  header .pos-number {
+    position: relative;
+    left: 0;
+    margin-top: 23px;
+    text-align: center; }
+    header .pos-number .number {
+      font-size: 9px;
+      color: #fff;
+      display: block; }
+    header .pos-number .fa {
+      color: #edae4e; }
+  header .menu1 {
+    margin-top: 15px; }
+  header .menu ul {
+    list-style: none;
+    display: block;
+    line-height: 2.2; }
+    header .menu ul li {
+      display: inline-block; }
+  header .menu .title {
+    display: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white; }
+  header .menu1 nav {
+    float: right; }
+    header .menu1 nav ul {
+      display: block; }
+      header .menu1 nav ul li {
         display: inline-block; }
-    header .menu .title {
-      display: none;
-      font-size: 18px;
-      cursor: pointer;
-      color: white; }
-    header .menu1 nav {
-      float: right; }
-      header .menu1 nav ul {
-        display: block; }
-        header .menu1 nav ul li {
-          display: inline-block; }
-          header .menu1 nav ul li a {
-            padding-left: 10px;
-            font-size: 9px;
-            color: #FFFFFF; }
-    header .hero {
-      width: 500px;
-      text-align: left; }
-      header .hero a {
-        margin: 0; }
+        header .menu1 nav ul li a {
+          padding-left: 10px;
+          font-size: 9px;
+          color: #FFFFFF; }
+  header .hero {
+    width: 500px;
+    text-align: left; }
+    header .hero a {
+      margin: 0; }
   .services-block .services-cont {
     margin: 0 0 35px 0;
     text-align: center; }
@@ -199,37 +229,60 @@ address {
           display: block;
           width: 150px;
           float: left;
-          padding: 10px 0 0 40px; } }
+          padding: 10px 0 0 40px; }
+  .call-us {
+    margin-top: 50px; }
+    .call-us .number-mail {
+      text-align: center; }
+    .call-us .img-overlay {
+      background: black; }
+      .call-us .img-overlay::before {
+        background: black;
+        width: 100%; }
+    .call-us span .button {
+      float: left;
+      width: 290px;
+      margin: 30px 20px 20px 0; }
+    .call-us p {
+      margin-top: 50px;
+      margin-left: 20px;
+      float: left; } }
 
 @media (min-width: 992px) {
-  header {
+  .main-header {
     height: 720px; }
-    header::before {
+    .main-header::before {
       height: 720px; }
-    header h1 {
+    .main-header h1 {
       margin-top: 25px; }
-    header .pos-number {
-      margin-top: 40px;
-      text-align: center; }
-      header .pos-number .number {
-        font-size: 13px;
-        color: #fff;
+  .contact-bg {
+    height: 325px; }
+    .contact-bg::before {
+      height: 325px; }
+    .contact-bg h1 {
+      margin-top: 25px; }
+  header .pos-number {
+    margin-top: 40px;
+    text-align: center; }
+    header .pos-number .number {
+      font-size: 13px;
+      color: #fff;
+      display: block; }
+    header .pos-number .fa {
+      color: #edae4e;
+      font-size: 18px; }
+  header .menu1 {
+    margin-top: 35px; }
+    header .menu1 nav {
+      float: right; }
+      header .menu1 nav ul {
         display: block; }
-      header .pos-number .fa {
-        color: #edae4e;
-        font-size: 18px; }
-    header .menu1 {
-      margin-top: 35px; }
-      header .menu1 nav {
-        float: right; }
-        header .menu1 nav ul {
-          display: block; }
-          header .menu1 nav ul li {
-            display: inline-block; }
-            header .menu1 nav ul li a {
-              padding-left: 10px;
-              font-size: 13px;
-              color: #FFFFFF; }
+        header .menu1 nav ul li {
+          display: inline-block; }
+          header .menu1 nav ul li a {
+            padding-left: 10px;
+            font-size: 13px;
+            color: #FFFFFF; }
   .services-block .services-cont {
     margin: 0 0 35px 0; }
     .services-block .services-cont ul {
@@ -253,28 +306,32 @@ address {
   .about {
     margin-top: 70px; }
   .clients {
-    margin-top: 70px; } }
+    margin-top: 70px; }
+  .call-us {
+    margin-top: 100px; }
+    .call-us .block-hero {
+      margin-left: 20px; } }
 
 @media (min-width: 1200px) {
-  header .pos-number {
+  .main-header .pos-number {
     margin-top: 38px;
     text-align: center; }
-    header .pos-number .number {
+    .main-header .pos-number .number {
       font-size: 13px;
       color: #fff;
       display: block; }
-    header .pos-number .fa {
+    .main-header .pos-number .fa {
       color: #edae4e;
       font-size: 18px; }
-  header .menu1 {
+  .main-header .menu1 {
     margin-top: 35px; }
-    header .menu1 nav {
+    .main-header .menu1 nav {
       float: right; }
-      header .menu1 nav ul {
+      .main-header .menu1 nav ul {
         display: block; }
-        header .menu1 nav ul li {
+        .main-header .menu1 nav ul li {
           display: inline-block; }
-          header .menu1 nav ul li a {
+          .main-header .menu1 nav ul li a {
             padding-left: 30px;
             font-size: 14px;
             color: #FFFFFF; }
@@ -375,6 +432,7 @@ h3 {
 
 h4 {
   font-family: "Lora", italic;
+  font-style: italic;
   font-weight: 800;
   font-size: 10px;
   margin: 6px 0;
@@ -431,7 +489,7 @@ p {
   text-align: center;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: rgba(220, 220, 220, 0.5);
+  background-color: rgba(205, 98, 31, 0.5);
   width: 290px;
   height: auto;
   margin-top: 30px; }
@@ -442,27 +500,27 @@ p {
   .menu.open ul {
     display: block; }
 
-header {
+.main-header {
   background: black;
   width: 100%;
   opacity: 0.9; }
-  header::before {
+  .main-header::before {
     background: url(../img/bg_h.png) no-repeat top center;
     content: '';
     width: 100%;
     position: absolute;
     top: 0;
     left: 0; }
-  header .pos-number {
+  .main-header .pos-number {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    header .pos-number .fa {
+    .main-header .pos-number .fa {
       color: #edae4e;
       float: left;
       padding-right: 5px; }
-    header .pos-number .number {
+    .main-header .pos-number .number {
       color: #fff;
       float: left;
       font-size: 13px; }
@@ -487,6 +545,29 @@ footer {
       color: #7b7b7c; }
       footer .left .soc .center ul li a {
         text-decoration: none; }
+
+.contact-bg {
+  background: black;
+  width: 100%;
+  opacity: 0.9; }
+  .contact-bg::before {
+    background: url(../img/bg-contact.png) no-repeat top center;
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.call-us .img-overlay {
+  background: black; }
+  .call-us .img-overlay::before {
+    background: black;
+    width: 100%; }
+
+.call-us span {
+  float: right; }
+  .call-us span .button {
+    width: 290px; }
 
 .services-block {
   background-color: #eaeff3; }
