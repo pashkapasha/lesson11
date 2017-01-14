@@ -3,27 +3,24 @@
     height: 350px
     &::before
       height: 350px
+  header
+    height: 350px
+    &::before
+      height: 350px
     h1
       margin-top: 8px
-  .contact-bg
-    height: 180px
-    &::before
-      height: 180px
-  header
-    h1
-      margin-top: 10px
-    .pos-number
-      position: absolute
-      left: -120px
-      margin-top: 5px
-      .fa
-        color: #edae4e
-        float: left
-        padding-right: 5px
-      .number
-        color: #fff
-        float: left
-        font-size: 13px
+  .pos-number
+    position: absolute
+    left: -120px
+    margin-top: 5px
+    .fa
+      color: #edae4e
+      float: left
+      padding-right: 5px
+    .number
+      color: #fff
+      float: left
+      font-size: 13px
   .hero
     text-align: center
     p
@@ -58,76 +55,140 @@
       padding-top: 20px
       text-align: center
       .author
-        margin: 0 auto
         margin-top: 10px
         width: 140px
         text-align: center
         ul
           display: block
           width: 150px
-          padding-top: 15px
+
     .cont2
       background: url(../img/quote-icon-2.png) no-repeat 167px 16px
       padding-top: 20px
       text-align: center
       .author
-        margin: 0 auto
         margin-top: 10px
         width: 140px
         text-align: center
         ul
           display: block
           width: 150px
-          padding-top: 15px
     .cont3
       background: url(../img/quote-icon-3.png) no-repeat 167px 16px
       padding-top: 20px
       text-align: center
       .author
-        margin: 0 auto
         margin-top: 10px
         width: 140px
         text-align: center
         ul
           display: block
           width: 150px
-          padding-top: 15px
-  .call-us
+  .news
+    background-color: #E9EEF2
     margin-top: 50px
-    .img-overlay
-      background: black
-      &::before
-        background: black
-        width: 100%
-    span
-      float: right
-      .button
-        width: 290px
-        margin-bottom: 20px
-    p
-      margin-top: 13px
+    .all
+      ul
+        text-align: center
+        li
+          margin: 10px 15px
+          display: inline-block
+          border-bottom: 1px solid black
+          width: 50px
+    .img-responsive
+      margin: 0 auto
+    .caption-top
+      margin-top: 50px
       text-align: center
-      font-weight: 700
       .fa
-        color: #edae4e
+        padding-right: 10px
+    .news-lf
+      padding-right: 5px
+    .text-news:first-child
+      border-bottom: none
+  .partners
+    &-head
+      text-align: center
+      margin-top: 50px
+    .bx-pager
+      position: relative
+  footer
+    .left
+      margin-top: 10px
+    h6
+      color: #ffffff
+      text-transform: uppercase
+      margin-top: 20px
+      font-size: 11px
+    .center
+      li
+        border-bottom: 1px solid
+        border-bottom-color: rgba(124, 123, 125, 0.3)
+        &:last-child
+          border: none
+        .fa
+          color: #ffaf36
+        a
+          color: #7b7b7c
+          font-size: 11px
+
+    .forms
+      margin-top: 20px
+      label
+        font-size: 12px
+        text-align: center
+        color: #ffffff
+        font-weight: 400
+        line-height: 1.2
+      .form-row
+        input,textarea
+          width: 80px
+          margin: 2px 0
+          font-size: 12px
+          background-color: transparent
+          border: 1px solid
+          border-color: rgba(124, 123, 125, 0.3)
+          overflow: hidden
+          &::-webkit-input-placeholder
+            color: #7b7b7c
+      .button
+        width:  80px
+        height: 30px
+        font-size: 10px
+        line-height: 2.8
+        float: left
+.partners
+  .bx-wrapper
+    margin-top: 60px
+    height: 200px
+    .bx-pager-item
+      font-size: 180px
+.bxslider
+  margin-top: 0
+  .content-box
+    text-align: center
+    ul
+      display: block
+      li
+        display: inline-block
+      span
+        li
+          display: none
 
 
 @media (min-width: 768px)
   .main-header
+     height: 460px
+     &::before
+       height: 460px
+  header
     height: 480px
     &::before
       height: 480px
-  .contact-bg
-    height: 225px
-    &::before
-      height: 225px
-  header
-    h1
-      margin-top: 8px
     .pos-number
       position: relative
       left: 0
-      margin-top: 23px
+      margin-top: 20px
       text-align: center
       .number
         font-size: 9px
@@ -189,10 +250,14 @@
         img
           float: left
         ul
-          display: block
-          width: 150px
-          float: left
-          padding: 10px 0 0 40px
+          margin-top: 10px
+          li
+            &:first-child
+              text-transform: uppercase
+              font-weight: 700
+              color: #0b0b0b
+
+
     .cont2
       background: url(../img/quote-icon-2.png) no-repeat 8px 16px
       padding-top: 50px
@@ -202,10 +267,13 @@
         img
           float: left
         ul
-          display: block
-          width: 150px
-          float: left
-          padding: 10px 0 0 40px
+          margin-top: 10px
+          li
+            &:first-child
+              text-transform: uppercase
+              font-weight: 700
+              color: #0b0b0b
+
 
     .cont3
       background: url(../img/quote-icon-3.png) no-repeat 8px 16px
@@ -216,46 +284,54 @@
         img
           float: left
         ul
-          display: block
-          width: 150px
-          float: left
-          padding: 10px 0 0 40px
-  .call-us
-    margin-top: 50px
-    .number-mail
-      text-align: center
-    .img-overlay
-      background: black
-      &::before
-        background: black
-        width: 100%
-    span
-      .button
-        float: left
-        width: 290px
-        margin: 30px 20px 20px 0
-    p
-      margin-top: 50px
-      margin-left: 20px
-      float: left
-
-
-
+          margin-top: 10px
+          li
+            &:first-child
+              text-transform: uppercase
+              font-weight: 700
+              color: #0b0b0b
+  .news
+    .caption-top
+      margin-top: 100px
+    .all
+      ul
+        text-align: center
+        li
+          display: inline-block
+          margin: 15px 0
+          &:before
+            border-bottom: solid 1px black
+            display: block
+            width: 50px
+          span
+            .fa
+              font-size: 20px
+              p
+                font-size: 14px
+          .news-lf
+            color: #0b0b0b
+            font-weight: 700
+            font-size: 17px
+            padding: 0
+    .text-news
+      margin: 20px 0
+      .text-yellow
+        color: #ffaf36
+        text-transform: uppercase
 
 @media (min-width: 992px)
   .main-header
+    height: 630px
+    &::before
+      height: 630px
+    h1
+      margin-top: 25px
+  header
     height: 720px
     &::before
       height: 720px
     h1
       margin-top: 25px
-  .contact-bg
-    height: 325px
-    &::before
-      height: 325px
-    h1
-      margin-top: 25px
-  header
     .pos-number
       margin-top: 40px
       text-align: center
@@ -303,13 +379,107 @@
     margin-top: 70px
   .clients
     margin-top: 70px
-  .call-us
-    margin-top: 100px
-    .block-hero
-      margin-left: 20px
+  .news
+    .caption-top
+      margin-top: 100px
+      text-align: left
+      ul
+        text-align: right
+        li
+          border-bottom: 1px solid black
+    .text-news:first-child
+      border-bottom: 1px solid #999999
+      padding-bottom: 15px
+    .button
+      float: left
+  .partners
+    &-head
+      text-align: left
+      margin-top: 100px
+  footer
+    .left
+      margin-top: 130px
+      ul
+        li
+          &:last-child
+            margin-top: 15px
+          img
+            width: 120px
+    h6
+      color: #ffffff
+      text-transform: uppercase
+      margin-top: 70px
+      font-size: 15px
+      font-weight: 700
+    .center
+      margin-top: 35px
+      li
+        border-bottom: 1px solid
+        border-bottom-color: rgba(124, 123, 125, 0.3)
+        line-height: 2.6
+        width: 150px
+        &:last-child
+          border: none
+        a
+          color: #7b7b7c
+          font-size: 12px
+          text-transform: uppercase
+          font-weight: 600
+          margin-left: 10px
+          text-decoration: none
+    .forms
+      margin-top: 70px
+      label
+        font-size: 15px
+        text-align: center
+        text-transform: uppercase
+        color: #ffffff
+        font-weight: 800
+        line-height: 1.2
+      .form-row
+        margin-top: 35px
+        input
+          width: 200px
+          height: 40px
+          float: left
+          margin: 2px 0
+          font-size: 12px
+          background-color: transparent
+          border: 1px solid
+          border-color: rgba(124, 123, 125, 0.3)
+          overflow: hidden
+          &::-webkit-input-placeholder
+            color: #7b7b7c
+            padding-left: 20px
+        textarea
+          width: 400px
+          height: 80px
+          padding: 20px
+      .button
+        height: 51px
+        width: 151px
+        font-size: 13px
+        line-height: 3.8
+        float: left
+  .partners
+  .bx-wrapper
+    margin-top: 60px
+    height: 200px
+    .bx-pager-item
+      font-size: 180px
+  .bxslider
+    margin-top: 0
+    .content-box
+      text-align: center
+      ul
+        display: block
+        span
+          li
+            display: inline-block
+
 
 @media (min-width: 1200px)
-  .main-header
+  header
     .pos-number
       margin-top: 38px
       text-align: center
@@ -345,6 +515,18 @@
     text-align: left
   .about
     margin-top: 100px
+  .partners
+    .bx-wrapper
+      margin-top: 60px
+      height: 200px
+
+    .bxslider
+      margin-top: 0
+      .content-box
+        ul
+          li
+            padding-right: 100px
+            display: inline-block
 
 
 
